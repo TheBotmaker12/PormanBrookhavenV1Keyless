@@ -58,19 +58,3 @@ local Tab = Window:CreateTab("Fun", 4483362458)
 
 
 local Tab = Window:CreateTab("Other", 4483362458)
-
-local Tab = Window:CreateTab("Testing")
-local NameTag = Tab:CreateLabel({
-   Text = "Name Tag: "
-})
-
-local Input = Tab:CreateInput({
-   Name = "Name Tag",
-   PlaceholderText = "Put name here",
-   RemoveTextAfterFocusLost = false,
-   Callback = function(Text)
-       -- The function that takes place when the input is changed
-       -- The variable (Text) is a string for the value in the text box
-       NameTag:SetText("Name Tag: " .. Text)
-   end,
-})
